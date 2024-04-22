@@ -1,0 +1,10 @@
+services:
+  docker-watcher:
+    container_name: docker-watcher
+    image: ghcr.io/zibbp/docker-watcher:latest
+    environment:
+      - DEBUG=false
+    volumes:
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: always

@@ -1,0 +1,14 @@
+{
+  "containers": [
+    {
+      "name": "foo",
+      "webhook_url": "https://ntfy.sh/my-topic",
+      "events": ["start", "die"]
+    },
+    {
+      "name": "bar",
+      "webhook_url": "https://ntfy.sh/my-topic",
+      "events": ["create", "remove"]
+    }
+  ]
+}
